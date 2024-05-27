@@ -24,7 +24,7 @@ body {
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-size: 18px;
-	padding-bottom:300px;
+	padding-bottom:50px;
 }
 
 a {
@@ -46,7 +46,7 @@ header {
 
 	.logo-holder {
 		display:flex;
-		padding:10px;
+		padding:0px;
 		align-items:center;
 		font-weight:600;
 		color: var(--base-800);
@@ -218,6 +218,29 @@ h1 {
 			}
 		}
 	}
+	
+
+	@media screen and (max-width: 500px) {
+		.hero-yellow {
+			flex:1;
+			background-color: var(--yellow);
+			border-radius:30px;
+			padding:10px 0px;
+			display:flex;
+			justify-content:center;
+			align-items:flex-end;
+			img {
+				margin-top:-105px;
+				max-width:420px;
+				margin-bottom:-10px;
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 501px)  and (max-width: 3900px) {
+	
 	.hero-yellow {
 		flex:1;
 		background-color: var(--yellow);
@@ -462,58 +485,40 @@ h3 {
 }
 
 
-.contact {
-    margin-top: 50px;
-	margin-bottom: 20px;
-}
-
-.contact .section-title {
-    text-align: center;
-    margin-bottom: 30px;
+.contact-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .contact-info {
-    background-color: var(--yellow-100);
-    padding: 30px;
-    border-radius: 30px;
-	margin-bottom: 20px;
-	font-size: 24px;
-    float: left; /* Float the containers to the left */
-    margin: 0 20px; /* Adjust the margin to create space between the containers */
+    flex: 1 1 30%; /* This makes each item take up 30% of the container's width, adjusting as needed */
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9; /* Optional: Add background color for better visibility */
+    border-radius: 8px; /* Optional: Add border radius for styling */
+    text-align: center;
+	background-color: var(--yellow-100);
 }
 
 .contact i.bx {
 	font-size: 24px;
-
 	border-radius: 50%;
 	padding: 14px;
 	float: justify;
 	background: rgba(0, 0, 0, 0.1);
   }
 
-.contact-info h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
+.social-profiles a {
+    display: inline-block;
+    margin: 10px;
 }
 
-.contact-info p {
-    margin-bottom: 0;
-}
-
-.social-links-contact {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.social-links-contact a {
-    margin-right: 10px;
-    color: var(--base-800);
-    font-size: 24px;
-}
-
-.social-links-contact a:last-child {
-    margin-right: 0;
+@media (max-width: 768px) {
+    .contact-info {
+        flex: 1 1 100%; /* On smaller screens, each item will take the full width */
+    }
 }
 
 
