@@ -48,9 +48,46 @@
 		<section class="hero container">
 			<div class="hero-blue">
 				<div>
-					<h1><small>Hi I'm</small>
-						Sameer Enjapuri
-					</h1>
+					<h1>
+				<small>Hi</small>
+					<span class="line">I'm <span class="typing">Sameer Enjapuri</span></span>
+				</h1>
+			
+				<script>
+					document.addEventListener('DOMContentLoaded', function() {
+						var typingElement = document.querySelector('.typing');
+						var phrases = ["Sameer Enjapuri", "a Data Engineer", "a Data Analyst"];
+						var currentPhraseIndex = 0;
+						var currentLetterIndex = 0;
+						var isDeleting = false;
+						var delay = 2000; // Delay before starting to delete text
+			
+						function type() {
+							var currentPhrase = phrases[currentPhraseIndex];
+							if (isDeleting) {
+								typingElement.textContent = currentPhrase.substring(0, currentLetterIndex - 1);
+								currentLetterIndex--;
+								if (currentLetterIndex === 0) {
+									isDeleting = false;
+									currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+									setTimeout(type, 500); // Pause before starting to type the next phrase
+									return;
+								}
+							} else {
+								typingElement.textContent = currentPhrase.substring(0, currentLetterIndex + 1);
+								currentLetterIndex++;
+								if (currentLetterIndex === currentPhrase.length) {
+									isDeleting = true;
+									setTimeout(type, delay); // Pause before starting to delete
+									return;
+								}
+							}
+							setTimeout(type, isDeleting ? 100 : 200);
+						}
+			
+						type();
+					});
+				</script>
 					<p>
 						I am a detail-oriented and results-driven professional with 5 years of expertise in Data Engineering and Analytics. I am proficient in designing, building, and optimizing data pipelines for efficient extraction, transformation, and loading (ETL) processes. I excel in interpersonal skills and am comfortable working with stakeholders across disciplines, propelled by an unwavering dedication to seamless data integration.
 </span>
