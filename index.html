@@ -47,16 +47,13 @@
 	<main>
 		<section class="hero container">
 			<div class="hero-blue">
-				<div>
-					<h1>
-				<small>Hi</small>
-					<span class="line">I'm <span class="typing">Sameer Enjapuri</span></span>
-				</h1>
-			
+				<h1>Sameer Enjapuri <br/></h1>
+				<h3><span class="line">I'm <span class="typing" style="color:#12D640"></span></span></h3>
+
 				<script>
 					document.addEventListener('DOMContentLoaded', function() {
 						var typingElement = document.querySelector('.typing');
-						var phrases = ["Sameer Enjapuri", "a Data Engineer", "a Data Analyst"];
+						var phrases = [ "a Data Engineer", "a Data Analyst", "an AI Enthusiast"];
 						var currentPhraseIndex = 0;
 						var currentLetterIndex = 0;
 						var isDeleting = false;
@@ -120,6 +117,18 @@
 		<section class="logos container">
 			<div class="marquee">
 				<div class="track">
+					<img src="./imgs/python.png" width="128" alt="Python" />
+					<img src="./imgs/SQL.png" width="128" alt="SQL" />
+					<img src="./imgs/ETL.png" width="128" alt="ETL" />
+					<img src="./imgs/Kafka.png" width="128" alt="Kafka" />
+					<img src="./imgs/Tableau1.png" width="128" alt="Tableau" />
+					<img src="./imgs/Powerbi.png" width="128" alt="PowerBI" />
+					<img src="./imgs/informatica.png" width="128" alt="Informatica" />
+					<img src="./imgs/AWS.png" width="128" alt="AWS" />
+					<img src="./imgs/html.png" alt="HTML" width="128" />
+					<img src="./imgs/Data Warehouse.png" alt="Data Warehouse" width="128" />
+					<img src="./imgs/css.png" alt="CSS" width="128" />
+					<img src="./imgs/vscode.png" width="128" alt="VS Code" />
 					<img src="./imgs/python.png" width="128" alt="Python" />
 					<img src="./imgs/SQL.png" width="128" alt="SQL" />
 					<img src="./imgs/ETL.png" width="128" alt="ETL" />
@@ -206,10 +215,16 @@
 					<p>
 						I'm passionate about leveraging data to drive strategic decisions and improve operational efficiency. Whether it's through building advanced ETL pipelines, optimizing database performance, or creating insightful visualizations, I strive to make data accessible and actionable for stakeholders across disciplines.
 					</p>
-					
+					<p>
+						Experienced in collaborating with cross-functional teams, including data scientists, business analysts, and software engineers, to achieve organizational goals. Effectively communicates technical concepts to non-technical stakeholders, ensuring alignment and understanding. Eager to contribute to projects that utilize data to improve people's lives and make a positive impact on society. 
+					</p>
+					<p>
+						Available for internship and full-time roles, including remote positions.
+					</p>
 				</div>
 			</div>
 		</section>
+
 		<section id="experience" class="work-experience container">
 			<h2>
 				<small>Recent</small>
@@ -238,7 +253,8 @@
 							</figcaption>
 						</div>
 					</figure>
-					<h3>Consultant – Data Engineer</h3>
+					<h3>Data Engineer/Analyst</h3></br>
+				
 					<div>Feb 2022 - Jul 2023</div>
 					<p>Analyzed data streams, reducing processing time by 40%. Engineered real-time data integration solutions with Confluent Kafka, improving streaming efficiency by 25%. Designed interactive Tableau dashboards for predictive analytics, enhancing decision-making by 30%.</p>
 				</article>
@@ -251,7 +267,7 @@
 							</figcaption>
 						</div>
 					</figure>
-					<h3>System Engineer – Data Engineer</h3>
+					<h3>Data Engineer/Analyst</h3></br>
 					<div>Sep 2018 - Jan 2022</div>
 					<p>Managed ETL pipelines in Informatica PowerCenter, achieving a 95% success rate in transitioning workflows to Kafka. Optimized database performance by 15% using advanced data modeling techniques. Applied business intelligence principles for accurate reporting and insights.</p>
 				</article>
@@ -263,9 +279,9 @@
 			<h2><small>Academic</small> Projects</h2>
 			<div class="projects">
 				<article>
-					<h3>Data Engineering YouTube Analysis</h3>
+					<h3><a href="https://github.com/senjapuri/Data-Engineering-YouTube-Analysis-Project" target="_blank">Data Engineering YouTube Analysis</a></h3>
 					<div>AWS, ETL, S3, Glue, Lambda, Athena, QuickSight</div>
-					<p>Developed a scalable data pipeline on AWS integrating services like S3, Glue, Lambda, and Athena for ingestion, ETL, and querying. Established a centralized data lake for storage and analysis of YouTube video data. Created a dashboard using Amazon QuickSight for reporting and extracting insights from video metrics.</p>
+					<p>Developed a scalable data pipeline on AWS integrating services like S3, Glue, Lambda, and Athena for ingestion, ETL, and querying. Established a centralized data lake for storage and analysis of YouTube video data. Created a <a href="https://us-east-2.quicksight.aws.amazon.com/sn/accounts/767398062630/dashboards/be54c557-f8fe-42fd-8332-3908e26011e1?directory_alias=sameerenjapuri" target="_blank">Dashboard</a> using Amazon QuickSight for reporting and extracting insights from video metrics.</p>
 				</article>
 				<article>
 					<h3>Analyzing Spotify Songs Dataset</h3>
@@ -277,6 +293,7 @@
 					<div>SQL, SSMS, Azure</div>
 					<p>Designed ERD, EERD, RS and created a hospital management database with 14 tables in SQL SSMS. Created Stored procedures, Views, Triggers, UDFs to implement business logic and deployed the database to an Azure remote server.</p>
 				</article>
+				
 			</div>
 		</section>
 
@@ -317,6 +334,33 @@
 				</div>
 			</div>
 		</section>
+		<hr class="footer-divider">	
+		<footer>
+			<div class="footer-content">
+				<p>&copy; Sameer Krishna Enjapuri Portfolio</p>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#skills">Skills</a>
+						</li>
+						<li>
+							<a href="#experience">Experience</a>
+						</li>
+						<li>
+							<a href="#academic-projects">Projects</a>
+						</li>
+						<li>
+							<a href="#contacts">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+
+		
 	</main>
 </body>
 </html>
