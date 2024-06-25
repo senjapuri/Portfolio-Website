@@ -25,5 +25,3 @@ function copyToClipboard(emailId, buttonId) {
     });
 }
 
-
-
