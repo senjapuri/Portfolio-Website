@@ -156,6 +156,7 @@ header {
 				position:absolute;
 				top:20px;
 				right:20px;
+				z-index: 1100;
 			}
 		}
 	}
@@ -169,6 +170,7 @@ header {
 		flex-direction:column;
 		align-items:center;
 		nav {
+			background-color: var(--base-100);
 			margin-top:10px;
 			width:100%;
 			ul {
@@ -177,6 +179,7 @@ header {
 				text-align:center;
 				width:100%;
 				a {
+					background-color: #fff;
 					width:100%;
 				}
 				&.active {
@@ -733,23 +736,48 @@ footer {
 	font-family: "Poppins";
 	margin-left: 0.5rem;
   }
+
   /* skills media queries starts*/
   @media screen and (max-width: 600px) {
-	.skills .container {
-	  padding: 0;
-	  margin: 0;
-	}
-	.skills .container .row {
-	  grid-template-columns: repeat(2, 1fr);
-	  margin: 1rem;
-	  padding: 2rem 0.2rem 2rem 0.2rem;
-	  gap: 1rem;
-	}
-	.skills .container {
-	  margin-top: 5px;
-	  width: 100%;
-	}
-  }
+    .skills .container {
+        padding: 0; /* Remove padding to avoid overflow */
+        margin: 0; /* Remove margin for better layout */
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(2, 1fr); /* Two columns per row on mobile */
+        margin: 1rem; /* Add margin for spacing */
+        padding: 2rem 0.2rem; /* Adjust padding for spacing */
+        gap: 1rem; /* Adjust gap between items */
+		align-content: center;
+		justify-content: center;
+    }
+
+    .skills .container .bar {
+        padding: 10px; /* Adjust padding to fit within the container */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 22, 0.9);
+        transition: 0.2s;
+        width: 100%; /* Ensure bar width stretches to fill the parent */
+        border-radius: 10px; /* Optional: Add border radius for styling */
+        margin-bottom: 1rem; /* Add margin bottom for spacing */
+    }
+
+    .skills .container .bar .info {
+        margin-top: 0.5rem; /* Adjust top margin for spacing */
+        text-align: center; /* Center align text within .info */
+    }
+
+    .skills .container .bar .info i {
+        font-size: 3rem; /* Decrease font size for better fit */
+    }
+
+    .skills .container .bar .info span {
+        font-size: 1.5rem; /* Decrease font size for better fit */
+        color: #fff; /* Ensure text is readable against dark background */
+    }
+}
+
   /* skills media queries ends*/
   /* skills section ends */
 
