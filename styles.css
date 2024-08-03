@@ -136,7 +136,6 @@ header {
 			li {
 				display:inline-block;
 				a {
-					display:inline-block;
 					padding:10px 20px;
 					color:var(--base);
 					&:hover {
