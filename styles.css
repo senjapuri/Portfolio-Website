@@ -467,73 +467,108 @@ h3 {
 	}
 }
 
-
 .academic-projects {
-    .projects {
-        display: column;
-        gap: 30px;
+	.projects {
 		padding-top: 20px;
-        @media (max-width: 1024px) {
-            flex-direction: column;
-        }
-        article {
-            background-color: var(--blue-100);
-            padding: 30px;
-            border-radius: 30px;
-			margin: 15px;
-            flex: 1;
-            h3 {
-                margin-top: 20px;
-                margin-bottom: 10px;
-            }
-            div {
-                font-weight: 600;
-                margin-bottom: 5px;
-                color: var(--base-800);
-            }
-            p {
-                margin-bottom: 10px;
-            }
-            figure {
-                width: 100%;
-                padding-top: 56.25%;
-                overflow: hidden;
-                position: relative;
-                border-radius: 15px;
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 100%;
-                    object-fit: cover;
-                    transition: ease 3s all;
-                }
-                figcaption {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    color: var(--base-100);
-                    text-align: center;
-                    padding: 10px;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: ease 0.3s all;
-                }
+		display:flex;
+		gap:20px;
+		@media(max-width:1024px){
+			flex-direction:column;
+		}
+		article {
+			background-color: var(--blue-100);
+			padding:20px;
+			border-radius:30px;
+			flex:1;
+			h3 {
+				margin-top:10px;
+				margin-bottom:10px;
+			}
+			div {
+				font-weight:600;
+				margin-bottom:5px;
+				color: var(--base-800);
+			}
+			p {
+				margin-bottom:10px;
+			}
+			figure {
+				width:100%;
+				padding-top:56.25%;
+				overflow:hidden;
+				position:relative;
+				border-radius:15px;
+				img {
+					position:absolute;
+					top:0;
+					left:0;
+					height:100%;
+					object-fit:cover;
+					transition: ease 3s all;
+				}
+				figcaption {
+					position:absolute;
+					bottom:0;
+					left:0;
+					right:0;
+					background-color: rgba(0,0,0,0.5);
+					color: var(--base-100);
+					text-align:center;
+					padding:10px;
+					opacity:0;
+					visibility:hidden;
+					transition: ease 0.3s all;
+				}
 
-                &:hover {
-                    figcaption {
-                        opacity: 1;
-                        visibility: visible;
-                    }
-                    img {
-                        transform: scale(1.2);
-                    }
-                }
-            }
-        }
-    }
+				&:hover {
+					figcaption {
+						opacity:1;
+						visibility:visible;
+					}
+					img {
+						transform: scale(1.2);
+					}
+				}
+
+			}
+		}
+	}
+     .viewall {
+		display: flex;
+		color: #fff;
+		justify-content: center;
+		padding: 1rem 1rem;
+	  }
+	  .viewall .btn {
+		position: relative;
+		line-height: 0;
+		padding: 1rem 1rem;
+		border-radius: 0.5em;
+		transition: 0.5s;
+		color: rgb(15, 15, 15);
+		font-weight: 700;
+		border: 2px solid #000000;
+		box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+		text-align: center;
+	  }
+	  .viewall .btn span {
+		font-weight: 600;
+		font-size: 1.7rem;
+		font-family: "Nunito", sans-serif;
+	  }
+	  .viewall .btn i {
+		margin-left: 0.3rem;
+		font-size: 1.5rem;
+		transition: 0.3s;
+	  }
+	  .viewall .btn:hover {
+		background-color: rgba(121, 235, 166, 0.5);
+		color: #000;
+	  }
+	  .viewall .btn:hover i {
+		transform: translateX(5px);
+	  }
+
 }
 
 
@@ -775,8 +810,4 @@ footer {
         color: #fff; /* Ensure text is readable against dark background */
     }
 }
-
-  /* skills media queries ends*/
-  /* skills section ends */
-
 
